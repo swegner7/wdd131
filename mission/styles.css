@@ -1,0 +1,32 @@
+body { 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+h4 {
+    color: #006EB6;
+    border-bottom: 1px solid grey;
+    font-size: 21px;
+}
+
+h1, h4 {
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.content { 
+    margin: 50px;
+    padding: 100px;
+    outline: auto;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    max-width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
