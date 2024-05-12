@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+header,
+footer {
+  background-color: #53499c;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 1em;
+  font-family: "Mooli", Arial;
+}
+
+footer {
+  background-color: #53499c;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #ebeaea;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  gap: 5em;
+  padding: 5em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+  border: 5px solid white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.658);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+  section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1500px) {
+  section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1501px) and (max-width: 2000px) {
+  section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 2001px) and (max-width: 3000px) {
+  section {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  section {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  button {
+    display: none;
+  }
+}
