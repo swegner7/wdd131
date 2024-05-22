@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Hide the menu by default */
+      #myMenu {
+        display: none;
+      }
+
+      /* Style the menu button */
+      #menuButton {
+        background-color: #4caf50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="menuButton" onclick="toggleMenu()">Menu</button>
+
+    <div id="myMenu">
+      <a href="#">Option 1</a><br />
+      <a href="#">Option 2</a><br />
+      <a href="#">Option 3</a><br />
+    </div>
+
+    <script>
+      function toggleMenu() {
+        var x = document.getElementById("myMenu");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

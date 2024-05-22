@@ -47,7 +47,7 @@ img {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.658);
 }
 
-nav {
+.menu {
   display: flex;
   justify-content: space-between;
   margin-left: 200px;
@@ -66,13 +66,57 @@ button {
   color: white;
 }
 
+.hide {
+  display: none;
+}
+
+.viewer {
+  position: fixed;
+  display: grid;
+  width: 100%;
+  margin: 50px;
+  margin-right: 50px;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+}
+
+.viewer img {
+  padding: 100px;
+  max-width: 600px;
+  max-height: 100%;
+  border: none;
+  box-shadow: none;
+}
+
+.close-viewer {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 700px) {
   section {
     grid-template-columns: 1fr;
   }
-  nav {
+  .menu {
     flex-direction: column;
     align-items: center;
+  }
+
+  .hide {
+    display: none;
   }
 }
 
@@ -80,9 +124,13 @@ button {
   section {
     grid-template-columns: repeat(2, 1fr);
   }
-  nav {
+  .menu {
     flex-direction: column;
     align-items: center;
+  }
+
+  .hide {
+    display: none;
   }
 }
 
@@ -90,7 +138,11 @@ button {
   section {
     grid-template-columns: repeat(3, 1fr);
   }
-  button {
+
+  .hide {
+    display: none;
+  }
+  .menu-button {
     display: none;
   }
 }
@@ -99,7 +151,12 @@ button {
   section {
     grid-template-columns: repeat(4, 1fr);
   }
-  button {
+
+  .hide {
+    display: none;
+  }
+
+  .menu-button {
     display: none;
   }
 }
@@ -108,7 +165,11 @@ button {
   section {
     grid-template-columns: repeat(5, 1fr);
   }
-  button {
+
+  .hide {
+    display: none;
+  }
+  .menu-button {
     display: none;
   }
 }
@@ -117,7 +178,12 @@ button {
   section {
     grid-template-columns: repeat(6, 1fr);
   }
-  button {
+
+  .hide {
+    display: none;
+  }
+
+  .menu-button {
     display: none;
   }
 }
