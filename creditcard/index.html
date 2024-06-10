@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <div id="cardFront">
+        <p>TOTAL: $199</p>
+        <img src="card.png" alt="favicon" />
+
+        <div id="number">
+          <label for="cardNumber">CARD NUMBER</label>
+          <input
+            type="text"
+            id="cardNumber"
+            name="cardNumber"
+            placeholder="1234 5678 9101 1020"
+            required
+          />
+        </div>
+
+        <div id="holder">
+          <label for="cardHolder">CARD HOLDER</label>
+          <input
+            type="text"
+            id="cardHolder"
+            name="cardHolder"
+            placeholder="John Doe"
+            required
+          />
+        </div>
+
+        <div id="date">
+          <label for="expiration">EXPIRATION</label>
+          <input type="month" id="expiration" name="expiration" required />
+        </div>
+      </div>
+      <div id="cardBack">
+        <p></p>
+        <div id="cvv">
+          <label for="cvv">CVC/CVV</label>
+          <input type="text" id="cvv" name="cvv" placeholder="xxx" required />
+        </div>
+      </div>
+
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
