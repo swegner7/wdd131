@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  font-family: "Amatic SC", cursive;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 20px 0;
+  font-size: 40px;
+}
+
+.logo img {
+  width: 200px;
+}
+
+header form {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  max-height: 30px;
+}
+
+header form img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+header {
+  border-bottom: 1px solid lightgrey;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+section img {
+  max-width: 100%;
+}
+
+section .foodType {
+  border: 1px solid black;
+  max-width: 50%;
+  padding: 5px;
+  text-align: center;
+  font-size: 30px;
+}
+
+section .name {
+  font-size: 50px;
+  font-weight: bold;
+  color: #4c94c5;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 3em;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+@media (min-width: 800px) {
+  .logo {
+    margin: 20px;
+  }
+
+  header form {
+    margin: 20px;
+  }
+
+  section {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  section img {
+    max-width: 500px;
+    display: flex;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+}
