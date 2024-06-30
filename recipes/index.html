@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="recipes.css" />
+    <!-- <script src="recipes.mjs"></script> -->
+    <script src="main.js" type="module" defer></script>
     <title>Recipes</title>
   </head>
   <body>
@@ -14,7 +16,9 @@
       </div>
       <form>
         <input type="text" placeholder="Find a recipe" />
-        <button type="submit"><img src="images/search.svg" alt="" /></button>
+        <button type="submit">
+          <img src="images/search.svg" alt="" id="searchButton" />
+        </button>
       </form>
     </header>
     <main>
@@ -23,13 +27,19 @@
         <div>
           <h3 class="foodType">dessert</h3>
           <h2 class="name">Apple Crisp</h2>
-          <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star-empty">⭐</span>
-            <span aria-hidden="true" class="icon-star-empty">☆</span>
-          </span>
+          <p class="recipe_ratings">
+            <span
+              class="rating"
+              role="img"
+              aria-label="Rating: 4 out of 5 stars"
+            >
+              <span aria-hidden="true" class="icon-star">⭐</span>
+              <span aria-hidden="true" class="icon-star">⭐</span>
+              <span aria-hidden="true" class="icon-star">⭐</span>
+              <span aria-hidden="true" class="icon-star-empty">⭐</span>
+              <span aria-hidden="true" class="icon-star-empty">☆</span>
+            </span>
+          </p>
           <p class="description">
             This apple crisp recipe is a simple yet delicious fall dessert
             that's great served warm with vanilla ice cream.
