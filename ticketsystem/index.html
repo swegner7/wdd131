@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ticketing System</title>
+  </head>
+  <body>
+    <h1>Ticketing System</h1>
+
+    <form id="ticketForm">
+      <label for="phoneNumber">Phone Number:</label><br />
+      <input type="tel" id="phoneNumber" name="phoneNumber" /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br />
+      <label for="description">Problem Description:</label><br />
+      <textarea id="description" name="description"></textarea><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h2>Existing Tickets</h2>
+    <div id="tickets"></div>
+
+    <script src="ticketingSystem.js"></script>
+    <script>
+      document
+        .getElementById("ticketForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the form from submitting
+
+          // Get the form data
+          let phoneNumber = document.getElementById("phoneNumber").value;
+          let email = document.getElementById("email").value;
+          let description = document.getElementById("description").value;
+
+          // Create a new ticket
+          let ticket = ticketingSystem.createTicket(description);
+
+          // Add the ticket to the page
+          let ticketElement = document.createElement("div");
+          ticketElement.textContent =
+            "Ticket " +
+            ticket.id +
+            ": " +
+            description +
+            " (Phone: " +
+            phoneNumber +
+            ", Email: " +
+            email +
+            ")";
+          document.getElementById("tickets").appendChild(ticketElement);
+        });
+    </script>
+  </body>
+</html>

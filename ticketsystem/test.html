@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Add your CSS here */
+    </style>
+    <script>
+      // Prevent copying and pasting
+      document.addEventListener("copy", function (e) {
+        e.preventDefault();
+        alert("Copying is not allowed on this website.");
+      });
+      document.addEventListener("paste", function (e) {
+        e.preventDefault();
+        alert("Pasting is not allowed on this website.");
+      });
+    </script>
+  </head>
+  <body>
+    <form id="quiz" onsubmit="return checkAnswers();">
+      <!-- Add your questions here -->
+      <p>1. Question 1?</p>
+      <input type="text" id="answer1" />
+      <!-- Repeat for all 10 questions -->
+      <input type="submit" value="Submit" />
+    </form>
+    <script>
+      function checkAnswers() {
+        // Check the answers here
+        var answer1 = document.getElementById("answer1").value;
+        // Repeat for all 10 answers
+        // Show the results
+        return false; // Prevent form submission
+      }
+    </script>
+  </body>
+</html>
