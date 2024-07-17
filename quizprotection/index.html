@@ -1,53 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Ticketing System</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/quiz.css" />
+    <title>Home</title>
   </head>
   <body>
-    <h1>Ticketing System</h1>
-
-    <form id="ticketForm">
-      <label for="phoneNumber">Phone Number:</label><br />
-      <input type="tel" id="phoneNumber" name="phoneNumber" /><br />
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" /><br />
-      <label for="description">Problem Description:</label><br />
-      <textarea id="description" name="description"></textarea><br />
-      <input type="submit" value="Submit" />
-    </form>
-
-    <h2>Existing Tickets</h2>
-    <div id="tickets"></div>
-
-    <script src="ticketingSystem.js"></script>
-    <script>
-      document
-        .getElementById("ticketForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault(); // Prevent the form from submitting
-
-          // Get the form data
-          let phoneNumber = document.getElementById("phoneNumber").value;
-          let email = document.getElementById("email").value;
-          let description = document.getElementById("description").value;
-
-          // Create a new ticket
-          let ticket = ticketingSystem.createTicket(description);
-
-          // Add the ticket to the page
-          let ticketElement = document.createElement("div");
-          ticketElement.textContent =
-            "Ticket " +
-            ticket.id +
-            ": " +
-            description +
-            " (Phone: " +
-            phoneNumber +
-            ", Email: " +
-            email +
-            ")";
-          document.getElementById("tickets").appendChild(ticketElement);
-        });
-    </script>
+    <nav>
+      <a href="index.html"
+        ><img src="images/quizprotectionlogo.jpg" alt="logo"
+      /></a>
+      <h1>The Growing Challenge of AI-Assisted Cheating</h1>
+    </nav>
+    <main>
+      <div id="homeGrid">
+        <p>
+          As educators, we face an evolving landscape where technology
+          intersects with academic integrity. Students, driven by the allure of
+          convenience and efficiency, increasingly turn to artificial
+          intelligence (AI) tools to gain an unfair advantage during exams. Here
+          are some ways in which AI is exploited for cheating:
+        </p>
+        <img src="images/chalkboard.jpg" alt="chalkboard image" />
+      </div>
+      <ol>
+        <li>
+          <b>Automated Answer Generation:</b> Students use AI-powered platforms
+          to generate answers swiftly. These tools analyze questions, extract
+          relevant information, and produce coherent responses, often bypassing
+          the need for genuine understanding or critical thinking.
+        </li>
+        <li>
+          <b>Plagiarism Detection Evasion:</b> AI-driven paraphrasing tools can
+          subtly alter content, making it harder for plagiarism detection
+          software to flag copied material. Students exploit this to present
+          seemingly original work while relying on AI-generated content.
+        </li>
+        <li>
+          <b>Real-Time Assistance:</b> During online exams, students
+          surreptitiously consult AI chatbots or virtual assistants. These tools
+          provide instant answers, explanations, and even step-by-step
+          solutions, eroding the assessment’s validity.
+        </li>
+        <li>
+          <b>Image Recognition:</b> Students snap photos of exam questions and
+          use AI image recognition apps to retrieve answers from textbooks,
+          notes, or online resources. This method allows them to access
+          information without typing a single word.
+        </li>
+        <li>
+          <b>Algorithmic Cheating:</b> Some students manipulate algorithms in
+          adaptive learning systems. By intentionally answering questions
+          incorrectly to influence subsequent questions, they exploit the
+          system’s design to improve their scores.
+        </li>
+      </ol>
+      <p>
+        As educators, we must remain vigilant and adapt our strategies to combat
+        AI-assisted cheating. Balancing technological advancements with academic
+        integrity is a delicate task.
+        <b
+          >Here is one example of how JavaScript can help discourage cheating on
+          a quiz:</b
+        >
+      </p>
+      <button><a href="quiz.html">Example</a></button>
+    </main>
+    <footer>
+      <p>Spencer Wegner</p>
+      <p>2024</p>
+    </footer>
   </body>
 </html>

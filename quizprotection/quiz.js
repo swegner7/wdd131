@@ -2,6 +2,7 @@ const quizContainer = document.getElementById("quiz");
 const resultsContainer = document.getElementById("results");
 const submitButton = document.getElementById("submit");
 
+// Quiz questions to be added
 const questions = [
   {
     question: "What is JavaScript?",
@@ -26,49 +27,9 @@ const questions = [
     },
     correctAnswer: "a",
   },
-  {
-    question:
-      "What is the correct syntax for referring to an external script called 'xxx.js'?",
-    answers: {
-      a: "<script src='xxx.js'>",
-      b: "<script href='xxx.js'>",
-      c: "<script link='xxx.js'>",
-    },
-    correctAnswer: "a",
-  },
-  {
-    question: "Which event occurs when the user clicks on an HTML element?",
-    answers: { a: "onmouseclick", b: "onchange", c: "onclick" },
-    correctAnswer: "c",
-  },
-  {
-    question: "How do you declare a JavaScript variable?",
-    answers: { a: "var carName;", b: "variable carName;", c: "v carName;" },
-    correctAnswer: "a",
-  },
-  {
-    question: "Which operator is used to assign a value to a variable?",
-    answers: { a: "*", b: "-", c: "=" },
-    correctAnswer: "c",
-  },
-  {
-    question: "What will the following code return: Boolean(10 > 9)",
-    answers: { a: "true", b: "false", c: "NaN" },
-    correctAnswer: "a",
-  },
-  {
-    question: "Is JavaScript case-sensitive?",
-    answers: { a: "Yes", b: "No", c: "Sometimes" },
-    correctAnswer: "a",
-  },
-  {
-    question:
-      "Which keyword is used to declare variables that are block-scoped, a block is a chunk of code bounded by {}?",
-    answers: { a: "var", b: "let", c: "const" },
-    correctAnswer: "b",
-  },
 ];
 
+// Display quiz questions
 function showQuiz(questions, quizContainer) {
   let output = [];
   let answers;

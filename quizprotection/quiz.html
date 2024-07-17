@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Quiz</title>
-  </head>
-  <body>
-    <h1>JavaScript Quiz</h1>
-    <div id="quiz"></div>
-    <button id="submit">Submit Quiz</button>
-    <div id="results"></div>
     <script src="quiz.js" defer></script>
     <link rel="stylesheet" href="styles/quiz.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"
+        ><img src="images/quizprotectionlogo.jpg" alt="logo"
+      /></a>
+      <h1>The Growing Challenge of AI-Assisted Cheating</h1>
+    </nav>
+    <main>
+      <h1 class="quizExplain">Prevent Copying</h1>
+      <p class="quizExplain">
+        One simple way that we can discourage students from cheating on a quiz
+        is by using JavaScript to prevent copying from the page. In this example
+        I will simply stop you with an alert, but you do also stop the exam or
+        send a report that copying has been attempted to a database.
+      </p>
+      <div id="quiz"></div>
+      <button id="submit">Submit</button>
+      <div id="results"></div>
+    </main>
+    <footer>
+      <p>Spencer Wegner</p>
+      <p>2024</p>
+    </footer>
   </body>
 </html>
